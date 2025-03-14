@@ -9,7 +9,7 @@ namespace foodblog
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             // Kiểm tra thông tin đăng nhập (giả sử là "admin" và "password")
-            if (txtUsername.Text == "admin" && txtPassword.Text == "password")
+            if (txtUsername.Text == "admin" && txtPassword.Text == "111")
             {
                 FormsAuthentication.RedirectFromLoginPage(txtUsername.Text, true);
             }
