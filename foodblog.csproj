@@ -69,10 +69,12 @@
   <ItemGroup>
     <Content Include="BlogPost.aspx" />
     <Content Include="Home1.aspx" />
+    <Content Include="footer.html" />
     <Content Include="Login.aspx" />
     <Content Include="navbar.css" />
     <Content Include="Profile.aspx" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="TestNguyenlieu.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +107,13 @@
       <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestNguyenlieu.aspx.cs">
+      <DependentUpon>TestNguyenlieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestNguyenlieu.aspx.designer.cs">
+      <DependentUpon>TestNguyenlieu.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,5 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home1.aspx.cs" Inherits="foodblog.Home1" %>
 
+
 <!DOCTYPE html>
 <html lang="vi">
 <head runat="server">
@@ -87,6 +88,25 @@
         </ul>
       </div>
     </div>
+       <div class="footer">
+    <p>&copy; 2025 FoodBlog. All rights reserved.</p>
+    <ul class="footer-links">
+        <li><a href="home1.aspx"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="contact.aspx"><i class="fa fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="about-me">
+        <h4>About Me</h4>
+        <p>
+            Xin chào! Tôi là một người đam mê ẩm thực, chia sẻ công thức và hành trình ẩm thực đầy cảm hứng từ khắp mọi nơi.
+        </p>
+    </div>
+    <div class="social-links">
+        <a href="#"><i class="fa fa-facebook"></i> Facebook</a> |
+        <a href="#"><i class='fa fa-twitter'></i> Twitter</a> |
+        <a href="#"><i class='fa fa-instagram'></i> Instagram</a> |
+        <a href="#"><i class='fa fa-youtube'></i> YouTube</a>
+    </div>
+</div>
   </form>
 </body>
 </html>
