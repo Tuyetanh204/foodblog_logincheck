@@ -27,18 +27,6 @@ namespace foodblog
                 }
 
                 // Tạo các liên kết trong thanh điều hướng
-                if (User.Identity.IsAuthenticated)
-                {
-                    phNavLinks.Controls.Add(new Literal { Text = "<a href='home1.aspx'>Trang chủ</a>" });
-                    phNavLinks.Controls.Add(new Literal { Text = "<a href='#'>Giới Thiệu</a>" });
-                    phNavLinks.Controls.Add(new Literal { Text = "<div class='dropdown'><button class='dropbtn'>Cá nhân</button><div class='dropdown-content'><a href='new.aspx'>Tạo bài</a><a href='manage.aspx'>Quản lý</a><a href='#' onclick='logout()'>Đăng xuất</a></div></div>" });
-                }
-                else
-                {
-                    phNavLinks.Controls.Add(new Literal { Text = "<a href='home1.aspx'>Trang chủ</a>" });
-                    phNavLinks.Controls.Add(new Literal { Text = "<a href='register.aspx'>Đăng ký</a>" });
-                    phNavLinks.Controls.Add(new Literal { Text = "<a href='login.aspx'>Đăng nhập</a>" });
-                }
             }
         }
 
@@ -51,16 +39,5 @@ namespace foodblog
             // SaveBlogPostToDatabase(userId, blogPostId);
         }
 
-        protected void Logout_Click(object sender, EventArgs e)
-        {
-            // Đăng xuất người dùng
-            FormsAuthentication.SignOut();
-
-            // Xóa tất cả các session hiện có
-            Session.Abandon();
-
-            // Chuyển hướng về trang chủ
-            Response.Redirect("home1.aspx");
-        }
     }
 }
